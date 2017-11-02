@@ -1,0 +1,47 @@
+{
+  "name": "ramlasoftware",
+  "version": "1.0.0",
+  "description": "Página principal de Ramla Software",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfrancobedoya/ramlasoftware.git"
+  },
+  "keywords": [
+    "Ramla",
+    "Software",
+    "Medellín",
+    "Colombia",
+    "Desarrollo",
+    "Aplicaciones",
+    "Móviles"
+  ],
+  "author": "Ramla Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cfrancobedoya/ramlasoftware/issues"
+  },
+  "homepage": "https://github.com/cfrancobedoya/ramlasoftware#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "^3.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
