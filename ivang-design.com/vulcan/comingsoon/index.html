@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Vulcan</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/jquery.custombox.css">
+	<link rel="stylesheet" href="css/retina.css"/>
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="alternate stylesheet" type="text/css" href="css/colors/color-orange.css" title="orange">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-green.css" title="green">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-red.css" title="red">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-blue.css" title="blue">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/color-yellow.css" title="yellow">
+	
+	
+	
+    <!--[if lte IE 8]>
+        <script src="js/html5.js"></script>
+    <![endif]-->		
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+</head>
+<body>
+
+
+	
+	<!-- Primary Page Layout
+	================================================== -->
+	<div id="preloader"></div>
+
+	
+		<div id="home"> 
+		<div class="logo-home"></div>
+			<div id="wrapper-slider">
+				<div id="controls">
+					<div class="background-grid"></div>
+					<div class="prev"></div>
+					<div class="next"></div>
+				</div>
+			</div>
+			<div class="home-text">
+				<p>Stay tuned for something <span id="box1words"></span></p>
+		 	</div>
+			<div id="count-wrap"><div id="gray"></div></div>
+			<div class="social-bottom">
+				<ul class="bottom-social">
+					<li class="icon-bottom"><a href="#">&#xf099;</a></li>
+					<li class="icon-bottom"><a href="#">&#xf09a;</a></li>
+					<li class="icon-bottom"><a href="#">&#xf09b;</a></li>
+					<li class="icon-bottom"><a href="#">&#xf0d5;</a></li>
+					<li class="icon-bottom"><a href="#">&#xf0e0;</a></li>
+				</ul>	
+			</div> 
+		</div>
+
+		
+
+    <!-- Switch Panel -->
+    <div id="switch">
+        <div class="content-switcher" >        
+			<p>Color Options:</p>
+			<ul class="header">            
+				<li><a href="#" onClick="setActiveStyleSheet('orange'); return false;" class="button color switch" style="background-color:#d35400"></a></li>
+				<li><a href="#" onClick="setActiveStyleSheet('green'); return false;" class="button color switch" style="background-color:#2ecc71"></a></li>
+				<li><a href="#" onClick="setActiveStyleSheet('red'); return false;" class="button color switch" style="background-color:#e74c3c"></a></li>
+				<li><a href="#" onClick="setActiveStyleSheet('blue'); return false;" class="button color switch" style="background-color:#3498db"></a></li>
+				<li><a href="#" onClick="setActiveStyleSheet('yellow'); return false;" class="button color switch" style="background-color:#f1c40f"></a></li>
+			</ul>        
+			<div class="clear"></div>        
+			<p>Page Templates:</p> 
+			<div class="home-options">
+				<a href="http://ivang-design.com/vulcan/slider/">Multi-Page Slider</a>
+				<a href="http://ivang-design.com/vulcan/video/">Multi-Page Video</a>
+				<a href="http://ivang-design.com/vulcan/sliderop/">One-Page Slider</a>
+				<a href="http://ivang-design.com/vulcan/videoop/">One-Page Video</a>
+				<a href="http://ivang-design.com/vulcan/animated/">Animated Layout</a>
+				<a href="http://ivang-design.com/vulcan/animated2/">Animated Layout 2</a>
+				<a href="http://ivang-design.com/vulcan/parallax/">Parallax Version</a>
+				<a href="http://ivang-design.com/vulcan/showcaseslider/">Showcase Slider</a>
+				<a href="http://ivang-design.com/vulcan/splash/">Splash Intro</a>
+				<a href="http://ivang-design.com/vulcan/rotatingwords/">Rotating Words</a>
+				<a href="http://ivang-design.com/vulcan/404/">Page 404</a>
+				<a href="http://ivang-design.com/vulcan/3dmenu/">3D Menu Version</a>
+			</div> 
+			<div id="hide">
+				<img  src="images/close.png" alt="" /> 
+			</div>
+        </div>
+	</div>
+	<div id="show" style="display: block;">
+        <div id="setting"></div>
+    </div>
+    <!-- Switch Panel -->
+	
+
+	
+	<!-- JAVASCRIPT
+    ================================================== -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/styleswitcher.js"></script>
+<script type="text/javascript" src="js/pace.js"></script>
+<script type="text/javascript" src="js/jquery.wordrotator.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/jquery.custombox.js"></script>
+<script type="text/javascript" src="js/county.js"></script>
+<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/mb.bgndGallery.js"></script> 
+<script type="text/javascript" src="js/template.js"></script>  	  
+<!-- End Document
+================================================== -->
+</body>
+</html>

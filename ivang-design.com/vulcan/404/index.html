@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]>
+<!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Vulcan 404</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+		
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+</head>
+<body>
+
+	<div id="preloader"></div>
+
+
+
+	<div class="scene-wraper">
+	<div id="container" class="container">
+		<ul id="scene" class="scene">
+			<li class="layer" data-depth="1.00"><img src="images/layer1.png" alt=""></li>
+			<li class="layer" data-depth="0.80"><img src="images/layer2.png" alt=""></li>
+			<li class="layer" data-depth="0.60"><img src="images/layer3.png" alt=""></li>
+			<li class="layer" data-depth="0.40"><img src="images/layer4.png" alt=""></li>
+			<li class="layer" data-depth="0.20"><img src="images/layer5.png" alt=""></li>
+			<li class="layer" data-depth="0.00"><img src="images/layer6.png" alt=""></li>
+		</ul>
+	</div>
+	</div>
+	<div class="text"><p>Sorry, but the page that you requested doesn't exist.</p></div>
+	<div class="link-home"><div class="cl-effect-14"><a href="http://ivang-design.com/vulcan/slider/">back to home</a></div></div>
+
+	
+	
+	
+
+    <!-- Switch Panel -->
+    <div id="switch">
+        <div class="content-switcher" >        
+			<p>Page Templates:</p> 
+			<div class="home-options">
+				<a href="http://ivang-design.com/vulcan/slider/">Multi-Page Slider</a>
+				<a href="http://ivang-design.com/vulcan/video/">Multi-Page Video</a>
+				<a href="http://ivang-design.com/vulcan/sliderop/">One-Page Slider</a>
+				<a href="http://ivang-design.com/vulcan/videoop/">One-Page Video</a>
+				<a href="http://ivang-design.com/vulcan/animated/">Animated Layout</a>
+				<a href="http://ivang-design.com/vulcan/animated2/">Animated Layout 2</a>
+				<a href="http://ivang-design.com/vulcan/parallax/">Parallax Version</a>
+				<a href="http://ivang-design.com/vulcan/showcaseslider/">Showcase Slider</a>
+				<a href="http://ivang-design.com/vulcan/splash/">Splash Intro</a>
+				<a href="http://ivang-design.com/vulcan/rotatingwords/">Rotating Words</a>
+				<a href="http://ivang-design.com/vulcan/comingsoon/">Coming Soon</a>
+				<a href="http://ivang-design.com/vulcan/3dmenu/">Version With 3D Menu</a>
+			</div> 
+			<div id="hide">
+				<img  src="images/close.png" alt="" /> 
+			</div>
+        </div>
+	</div>
+	<div id="show" style="display: block;">
+        <div id="setting"></div>
+    </div>
+    <!-- Switch Panel -->	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Scripts -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/pace.js"></script>
+<script type="text/javascript" src="js/jquery.parallax.js"></script>
+<script>
+
+//Preloader
+   
+	$(window).load(function() {
+		$("#preloader").delay(350).fadeOut("slow");
+	})  
+
+
+	$('#scene').parallax();
+
+	
+	
+// Switcher
+  $(document).ready(function() {
+"use strict";
+    $("#hide, #show").click(function () {
+        if ($("#show").is(":visible")) {
+           
+            $("#show").animate({
+                "margin-left": "-500px"
+            }, 500, function () {
+                $(this).hide();
+            });
+            
+            $("#switch").animate({
+                "margin-left": "0px"
+            }, 500).show();
+        } else {
+            $("#switch").animate({
+                "margin-left": "-500px"
+            }, 500, function () {
+                $(this).hide();
+            });
+            $("#show").show().animate({
+                "margin-left": "0"
+            }, 500);
+        }
+    });
+                      
+});
+</script>
+
+</body>
+</html>
